@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Temporizador -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time left: 30s"
+        android:textSize="20sp"
+        android:textColor="#FF0000"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold" />
+
+
+    <!-- Puntos -->
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Points: 0"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón para clics -->
+    <Button
+        android:id="@+id/clickButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me!"
+        android:onClick="onClick"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón para guardar el puntaje -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Score"
+        android:onClick="saveScore"
+        android:visibility="gone"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botón para activar Power-Up -->
+    <Button
+        android:id="@+id/powerUpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activate Power-Up"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:onClick="activatePowerUp" />
+
+    <!-- Botón para activar Golden Streak -->
+    <Button
+        android:id="@+id/goldenStreakButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Golden Streak"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:onClick="activateGoldenStreak" />
+
+</LinearLayout>
